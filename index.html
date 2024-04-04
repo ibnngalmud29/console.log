@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console.log</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/terminal.css" />
+    <link rel="stylesheet" href="css/terminal-1.css" />
+    <link rel="stylesheet" href="css/terminal-2.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid-min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="terminal-logo">
+      <div class="logo terminal-prompt">
+        <b style="font-size: 20px">Console<b style="color: yellow">.log</b></b>
+      </div>
+    </header>
+
+    <div class="div-btn" id="div-btn">
+      <button class="btn-primary btn" id="btn-add"><span class="fa fa-plus"></span></button>
+      <button class="btn-default btn" id="btn-update"><span class="fa fa-refresh"></span></button>
+      <button class="btn-error btn" id="btn-delete"><span class="fa fa-trash"></span></button>
+    </div>
+
+    <!-- div add -->
+    <div class="content div-input hidden" id="div-add" style="z-index: 100">
+      <label for="">Input Console Name</label>
+      <input type="text" placeholder="Name" id="input-name-add" class="form-add" />
+      <br /><br />
+      <label for="">Year</label>
+      <input type="text" placeholder="Year" id="input-year-add" class="form-add" />
+      <br /><br />
+      <label for="">Description</label>
+      <textarea placeholder="Description" id="input-desc-add" class="form-add" rows="10"> </textarea>
+      <br /><br />
+      <label for="">URL</label>
+      <input type="text" placeholder="Image URL" id="input-img-add" />
+
+      <div id="parent-button">
+        <button class="btn btn-primary" id="button-Fadd">Add</button>
+        &nbsp;
+        <button class="btn btn-error" id="button-cancel-add">Cancel</button>
+      </div>
+    </div>
+    <!-- end of div add -->
+
+    <div class="content div-input hidden" id="div-update" style="z-index: 100">
+      <label for="cars">Console Name Options</label>
+      <br />
+      <select name="cars" id="select-update">
+        <option value="volvo">Atari 2600</option>
+        <option value="saab">Nintendo</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br /><br />
+
+      <label for="">Input Console Name</label>
+      <input type="text" placeholder="Name" id="input-name-update" class="form-add" />
+      <br /><br />
+      <label for="">Year</label>
+      <input type="text" placeholder="Year" id="input-year-update" class="form-add" />
+      <br /><br />
+      <label for="">Description</label>
+      <textarea placeholder="Description" id="input-desc-update" class="form-add" rows="10"> </textarea>
+      <br /><br />
+
+      <div id="parent-button">
+        <button class="btn btn-primary" id="button-Fupdate">Update</button>
+        &nbsp;
+        <button class="btn btn-error" id="button-cancel-update">Cancel</button>
+      </div>
+    </div>
+    <!-- end of div update -->
+
+    <!-- start of divdelete  -->
+    <div class="content div-input hidden" id="div-delete" style="z-index: 100">
+      <label for="cars">Console Name Options</label>
+      <br />
+      <select name="cars" id="option-delete">
+        <!-- isi dengan dom -->
+      </select>
+      <br /><br />
+      <div id="parent-button">
+        <button class="btn btn-primary" id="button-Fdelete">Delete</button>
+        &nbsp;
+        <button class="btn btn-error" id="button-cancel-delete">Cancel</button>
+      </div>
+    </div>
+    <!-- end of div delete -->
+
+    <section id="section"></section>
+
+    <!--div modal validasi-->
+    <div class="modal" id="myModal">
+      <p class="message">PLEASE CHECK YOUR INPUTS</p>
+      <div class="options">
+        <button class="btn-md" id="myBtnModal">Ok</button>
+      </div>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
