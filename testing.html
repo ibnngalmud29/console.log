@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/terminal.css">
+    <link rel="stylesheet" href="css/terminal-1.css">
+    <link rel="stylesheet" href="css/terminal-2.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-grid-min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <title>Document</title>
+
+<style>
+.modal {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  flex-direction: column;
+  align-items: center;
+  padding: 1.6rem 3rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  background: white;
+  box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+.message {
+    color:black;
+  font-size:1.1rem;
+  margin-bottom: 1.6rem;
+  margin-top: 0;
+}
+.btn-md {
+  color:black;
+    font-family:inherit;
+  font-size: inherit;
+  background: white;
+  padding: 0.3rem 3.4rem;
+  border: 3px solid black;
+  margin-right: 2.6rem;
+  box-shadow: 0 0 0 black;
+  transition: all 0.2s;
+}
+
+.btn-md:last-child {
+  margin: 0;
+}
+
+.btn-md:hover {
+  box-shadow: 0.4rem 0.4rem 0 black;
+  transform: translate(-0.4rem, -0.4rem);
+}
+
+.btn-md:active {
+  box-shadow: 0 0 0 black;
+  transform: translate(0, 0);
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+</style>
+
+
+
+</head>
+
+<body>
+   
+
+    
+<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <p class="message">Mohon Lengkapi Data Anda</p>
+    <div class="options">
+      <button class="btn-md" id="myBtnModal">Ok</button>
+  
+    </div>
+  </div>
+
+    <!-- <div class="timeline">
+
+        <div class="container-cr left-container">
+            <img class="gambarKiri" src="https://www.shutterstock.com/image-vector/retro-vintage-video-game-atari-600w-1890416116.jpg">
+            <div class="terminal-card">
+                <header>
+                <h2> Atari 2600</h2>
+            </header>
+            <div>
+                <small> 1977</small>
+                <p>was equipped with a joystick and several buttons that allowed players to control characters in the
+                    game.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+            </div>
+        </div>
+
+        <div class="container-cr right-container">
+            <img class="gambarKanan" src="https://www.shutterstock.com/image-vector/vector-classic-video-game-nes-600w-660699490.jpg" >
+            <div class="terminal-card">
+                <header>
+                <h2>Nintendo Entertainment System (NES)</h2>
+                </header>
+                <small> 1985</small>
+                <p>became the most popular game console at the time with over 60 million units sold. The NES was
+                    equipped with a more advanced controller and more color in its graphics.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr left-container">
+            <img class="gambarKiri" src="https://images-cdn.ubuy.co.id/6356c34f3a8eb169c2261372-sega-genesis-core-system-2-video-game.jpg">
+            <div class="terminal-card">
+                <header>
+                <h2> Sega Genesis</h2>
+            </header>
+            <div>
+                <small> 1988</small>
+                <p>became the most popular game console in the 1990s. The console was equipped with more controller
+                    buttons, as well as more advanced graphics than the NES.</p>
+                </div>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr right-container">
+            <img class="gambarKanan" src="https://i5.walmartimages.com/asr/c30cd00d-bd4b-42a1-a80b-6eff5fff897b.6bf326bec8bf24a1d8ff4853a12b426d.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+            <div class="terminal-card">
+                <header>
+                <h2>Sony PlayStation</h2>
+            </header>
+                <small>1994</small>
+                <p>became the first game console to use CD-ROM media as a source of games. The console became very
+                    popular with over 100 million units sold worldwide</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr left-container">
+            <img class="gambarKiri" src="https://static.wikia.nocookie.net/nintendo/images/0/0c/Nintendo_64_Console_%26_Controller.png/revision/latest?cb=20201214023244&path-prefix=en">
+            <div class="terminal-card">
+                <header>
+                <h2> Nintendo 64</h2>
+            </header>
+                <small> 1996</small>
+                <p>became the first game console to use 3D graphics. The Nintendo 64 was also equipped with an
+                    innovative controller with a joystick that could be moved in various directions.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr right-container">
+            <img class="gambarKanan" src="https://p-id.ipricegroup.com/uploaded_0b89d9a92aacab4d4cd66c2fcb46cb55.jpg">
+            <div class="terminal-card">
+                <header>
+                <h2> Sony PlayStation 2</h2>
+            </header>
+                <small> 2000</small>
+                <p>became the best-selling game console of all time with over 150 million units sold. The PlayStation 2
+                    was equipped with a DVD player that could be used as a movie player.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr left-container">
+            <img class="gambarKiri" src="https://i0.wp.com/news.xbox.com/en-us/wp-content/uploads/sites/2/Xbox360_Console_controller_RHS_34_rgb_Launch2013-No-Kinect.png?resize=920%2C478&ssl=1">
+            <div class="terminal-card">
+                <header>
+                <h2> Xbox 360</h2>
+            </header>
+                <small> 2005</small>
+                <p>became the first game console that could be connected to the internet network and allowed players to
+                    play games online. The console was also equipped with multimedia features such as music and video
+                    players.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr right-container">
+            <img class="gambarKanan" src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$">
+            <div class="terminal-card">
+                <header>
+                <h2> PlayStation 4</h2>
+            </header>
+                <small> 2013</small>
+                <p>became the most popular game console today with over 100 million units sold worldwide. The
+                    PlayStation 4 was equipped with features such as a Blu-ray player, media streaming, and motion
+                    controllers.</p>
+                <span class="right-container-arrow"></span>
+            </div>
+        </div>
+
+        <div class="container-cr left-container">
+            <img class="gambarKiri"src="https://media.wired.com/photos/5fa5dc3dba670daaf8e97a8d/master/w_2560%2Cc_limit/games_gear_series-x.jpg">
+            <div class="terminal-card">
+                <header>
+                <h2> Xbox Series X/S</h2>
+                </header>
+                <small> 2020</small>
+                <p>became the latest game console launched by Microsoft. This console has very high hardware
+                    specifications, and allows players to play games with 4K graphics and 120 fps.</p>
+                <span class="left-container-arrow"></span>
+            </div>
+        </div>
+    </div> -->
+
+
+    <script>
+        // Get the modal
+let modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+var btnm = document.getElementById("myBtnModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "inline-flex";
+}
+
+// When the user clicks on <span> (x), close the modal
+btnm.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+    </script>
+</body>
+
+</html>
