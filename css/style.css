@@ -1,0 +1,244 @@
+/* body {
+    background: url(background.jpg);
+    background-size: 1280px 720px;
+    display: flex;
+} */
+
+body {
+    --global-font-size: 15px;
+    --global-line-height: 1.4em;
+    --global-space: 10px;
+    --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+    --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+    --background-color: #222225;
+    --page-width: 60em;
+    --font-color: #e8e9ed;
+    --invert-font-color: #222225;
+    --secondary-color: #a3abba;
+    --tertiary-color: #a3abba;
+    --primary-color: #62c4ff;
+    --error-color: #ff3c74;
+    --progress-bar-background: #3f3f44;
+    --progress-bar-fill: #62c4ff;
+    --code-bg-color: #3f3f44;
+    --input-style: solid;
+    --display-h1-decoration: none;
+  }
+
+.hidden{
+    display: none;
+}
+
+.div-input{
+    background-color: rgba(0, 0, 0, 0.726);
+    width: 50%;
+    max-height: 600px;
+    border-radius: 10px;
+    padding: 20px 80px;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+.div-btn {
+    position:absolute; right: 10px; top: 10px; z-index: 99;
+}
+
+.main-title {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 75px;
+}
+
+
+
+.typewriter {
+    display:flex;
+    color: white;
+    font-size:30px;
+    overflow: hidden;
+    border-right: .13em solid rgb(100, 141, 237);
+    white-space: nowrap;
+    letter-spacing: .13em;
+    animation:  typing 3.5s steps(40, end), blink-caret .5s step-end infinite;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.blink {
+    cursor: pointer;
+    animation: blink 1s steps(1, end) infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color:rgb(100, 141, 237);
+    }
+}
+
+
+.hide {
+  animation-name: fadeOut;
+  animation-duration: 3s;
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+
+#button-Fadd {
+    background-color: white;
+   
+    border-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  }
+  
+  #button-Fdelete {
+    background-color: white;
+    border-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  
+  }
+
+  #button-Fdelete:hover {
+    background: #62c4ff;
+    color:white;
+  }
+
+  #button-cancel-delete {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 10px;
+    border-color: #e7e7e7;
+    color: white;
+  }
+
+  #button-cancel-update {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 10px;
+    border-color: #e7e7e7;
+    color: white;
+  }
+
+  #button-cancel-add {
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left : 10px;
+    border-color: #e7e7e7;
+    color: white;
+  }
+  
+  #button-cancel-add:hover {
+    background: #ff3c74;
+    color:black;
+  }
+
+  #button-cancel-update:hover {
+    background: #ff3c74;
+    color:black;
+  }
+
+  #button-cancel-delete:hover {
+    background: #ff3c74;
+    color:black;
+  }
+  
+  #button-Fadd:hover {
+    background: #62c4ff;
+    color:white;
+  }
+  
+  #parent-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding-top : 20px;
+  }
+
+  #button-Fupdate {
+    background-color: white;
+
+    border-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  #button-Fupdate:hover {
+    background: #62c4ff;
+    color:white;
+  }
